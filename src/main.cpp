@@ -39,8 +39,6 @@ void setup() {
   pinMode(straightPin, INPUT_PULLUP);
 
   Serial.begin(9600);
-  while (!Serial)
-    delay(10);
 
   decoder->setup();
   neopixel.setPixelColor(0, 16, 0, 0);
